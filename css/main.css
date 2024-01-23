@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+
+}
+.products h1{
+    margin: auto;
+     padding: 20px;
+     font-family: "Exo 2", sans-serif;
+
+  
+}
+.container{
+    width: calc(100% - 100px);
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+  }
+.products-list{
+    width: calc(100% -100px);
+    position: absolute;
+  
+    margin: auto;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 10px;
+    justify-content:space-between;
+}
+.product-card{
+   width:  calc((100% - 30px ) / 3);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:10px;
+    padding: 50px;
+    border: 1px solid #655f5fcb;
+    align-items: center;
+    border-radius: 10px;
+  
+    
+}
+.product-card span{
+    color:#827d7dce ;
+}
+.product-card h2{
+
+    font-size: 20px;
+    font-family: "Indie Flower", cursive;
+    text-align: center;
+}
+.product-card h3{
+
+   color: #000000b6;
+}
+.product-img{
+    width: 100%;
+    aspect-ratio: 135.09/99.079;
+    filter: brightness(80%);
+ 
+    
+}
+
+.product-card:hover .product-img{
+    filter: brightness(100%) ;
+}
+
+@media  screen and (max-width: 768px) {
+    .products-list{
+  flex-direction: column;
+    }
+    .product-card{
+        width:  100%;
+      
+        align-items: center;
+    }
+}
